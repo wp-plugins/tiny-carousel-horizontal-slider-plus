@@ -1,0 +1,351 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tiny carousel horizontal slider plus\n"
+"POT-Creation-Date: 2014-06-08 13:34+0800\n"
+"PO-Revision-Date: 2014-06-08 13:34+0800\n"
+"Last-Translator: \n"
+"Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../classes/tiny-carousel-loadwidget.php:86
+msgid "Please check your short code. Gallery does not exists for this Id."
+msgstr ""
+
+#: ../classes/tiny-carousel-register.php:45
+msgid "These tables could not be created on installation "
+msgstr ""
+
+#: ../classes/tiny-carousel-register.php:71
+#: ../classes/tiny-carousel-register.php:72
+msgid "Tiny Carousel"
+msgstr "சிறிய Carousel"
+
+#: ../classes/tiny-carousel-register.php:74
+#: ../classes/tiny-carousel-register.php:75
+#: ../page/tiny-carousel-gallery-show.php:44
+msgid "Gallery Details"
+msgstr "கேலரி விவரங்கள்"
+
+#: ../classes/tiny-carousel-register.php:77
+#: ../classes/tiny-carousel-register.php:78
+#: ../page/tiny-carousel-image-show.php:44
+msgid "Image Details"
+msgstr "பட விவரங்கள்"
+
+#: ../page/tiny-carousel-gallery-add.php:30
+#: ../page/tiny-carousel-gallery-add.php:122
+#: ../page/tiny-carousel-gallery-edit.php:46
+#: ../page/tiny-carousel-gallery-edit.php:122
+msgid "Enter title for your gallery."
+msgstr "உங்கள் கேலரி தலைப்பு சேர்க்கவும்."
+
+#: ../page/tiny-carousel-gallery-add.php:37
+#: ../page/tiny-carousel-gallery-add.php:126
+#: ../page/tiny-carousel-gallery-edit.php:53
+msgid ""
+"Enter your image width, You should add same width images in this gallery. "
+"(Ex: 200)"
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-add.php:44
+#: ../page/tiny-carousel-gallery-add.php:130
+#: ../page/tiny-carousel-gallery-edit.php:60
+msgid ""
+"Enter your image height, You should add same height images in this gallery. "
+"(Ex: 150)"
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-add.php:53
+#: ../page/tiny-carousel-gallery-add.php:148
+#: ../page/tiny-carousel-gallery-edit.php:69
+#: ../page/tiny-carousel-gallery-edit.php:148
+msgid "Enter auto interval time in millisecond. (Ex: 1500)"
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-add.php:60
+#: ../page/tiny-carousel-gallery-add.php:152
+#: ../page/tiny-carousel-gallery-edit.php:76
+#: ../page/tiny-carousel-gallery-edit.php:152
+msgid "Enter animation duration in millisecond. (Ex: 1000)"
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-add.php:72
+#: ../page/tiny-carousel-image-add.php:47
+msgid "New details was successfully added."
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-add.php:76
+#: ../page/tiny-carousel-gallery-edit.php:92
+#: ../page/tiny-carousel-image-add.php:51
+#: ../page/tiny-carousel-image-edit.php:67
+msgid "Oops unexpected error occurred."
+msgstr "அச்சச்சோ எதிர்பாராத பிழை ஏற்பட்டது."
+
+#: ../page/tiny-carousel-gallery-add.php:107
+#: ../page/tiny-carousel-gallery-edit.php:107
+#: ../page/tiny-carousel-image-add.php:79
+#: ../page/tiny-carousel-image-edit.php:82
+msgid "Click here"
+msgstr "இங்கே கிளிக் செய்யவும்"
+
+#: ../page/tiny-carousel-gallery-add.php:108
+#: ../page/tiny-carousel-gallery-edit.php:108
+#: ../page/tiny-carousel-image-add.php:80
+#: ../page/tiny-carousel-image-edit.php:83
+msgid "to view the details"
+msgstr "விவரங்கள் பார்வையிட"
+
+#: ../page/tiny-carousel-gallery-add.php:118
+msgid "Add Gallery Details"
+msgstr "கேலரி விவரங்கள்"
+
+#: ../page/tiny-carousel-gallery-add.php:120
+#: ../page/tiny-carousel-gallery-edit.php:120
+#: ../page/tiny-carousel-gallery-show.php:57
+#: ../page/tiny-carousel-gallery-show.php:71
+#: ../page/tiny-carousel-image-add.php:111
+#: ../page/tiny-carousel-image-edit.php:114
+#: ../page/tiny-carousel-image-show.php:60
+#: ../page/tiny-carousel-image-show.php:70
+msgid "Gallery title"
+msgstr "கேலரி தலைப்பு"
+
+#: ../page/tiny-carousel-gallery-add.php:124
+#: ../page/tiny-carousel-gallery-edit.php:124
+#: ../page/tiny-carousel-gallery-show.php:59
+#: ../page/tiny-carousel-gallery-show.php:73
+msgid "Width"
+msgstr "அகலம்"
+
+#: ../page/tiny-carousel-gallery-add.php:128
+#: ../page/tiny-carousel-gallery-edit.php:128
+#: ../page/tiny-carousel-gallery-show.php:60
+#: ../page/tiny-carousel-gallery-show.php:74
+msgid "Height"
+msgstr "உயரம்"
+
+#: ../page/tiny-carousel-gallery-add.php:132
+#: ../page/tiny-carousel-gallery-edit.php:132
+#: ../page/tiny-carousel-gallery-show.php:61
+#: ../page/tiny-carousel-gallery-show.php:75
+msgid "Controls"
+msgstr "கட்டுப்பாடுகள்"
+
+#: ../page/tiny-carousel-gallery-add.php:137
+#: ../page/tiny-carousel-gallery-edit.php:137
+msgid "Want to use the Left, Right arrow button in your gallery?"
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-add.php:139
+#: ../page/tiny-carousel-gallery-edit.php:139
+msgid "Auto interval"
+msgstr "ஆட்டோ இடைவெளி"
+
+#: ../page/tiny-carousel-gallery-add.php:144
+#: ../page/tiny-carousel-gallery-edit.php:144
+msgid "Want to add auto interval to move one image from another?"
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-add.php:146
+#: ../page/tiny-carousel-gallery-edit.php:146
+#: ../page/tiny-carousel-gallery-show.php:62
+#: ../page/tiny-carousel-gallery-show.php:76
+msgid "Interval time"
+msgstr "இடைவேளை நேரம்"
+
+#: ../page/tiny-carousel-gallery-add.php:150
+#: ../page/tiny-carousel-gallery-edit.php:150
+#: ../page/tiny-carousel-gallery-show.php:63
+#: ../page/tiny-carousel-gallery-show.php:77
+msgid "Animation"
+msgstr "அனிமேஷன்"
+
+#: ../page/tiny-carousel-gallery-add.php:154
+#: ../page/tiny-carousel-gallery-edit.php:154
+msgid "Random display"
+msgstr "ரேண்டம் காட்சி"
+
+#: ../page/tiny-carousel-gallery-add.php:159
+#: ../page/tiny-carousel-gallery-edit.php:159
+msgid "Do you want to display images in random order?"
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-add.php:163
+#: ../page/tiny-carousel-gallery-edit.php:164
+#: ../page/tiny-carousel-image-add.php:130
+#: ../page/tiny-carousel-image-edit.php:140
+msgid "Submit"
+msgstr "சமர்ப்பிக்கவும்"
+
+#: ../page/tiny-carousel-gallery-add.php:164
+#: ../page/tiny-carousel-gallery-edit.php:165
+#: ../page/tiny-carousel-image-add.php:131
+#: ../page/tiny-carousel-image-edit.php:141
+msgid "Cancel"
+msgstr "ரத்து"
+
+#: ../page/tiny-carousel-gallery-add.php:165
+#: ../page/tiny-carousel-gallery-edit.php:166
+#: ../page/tiny-carousel-gallery-show.php:125
+#: ../page/tiny-carousel-image-add.php:132
+#: ../page/tiny-carousel-image-edit.php:142
+#: ../page/tiny-carousel-image-show.php:128
+msgid "Help"
+msgstr "உதவி"
+
+#: ../page/tiny-carousel-gallery-edit.php:16
+#: ../page/tiny-carousel-gallery-show.php:16
+#: ../page/tiny-carousel-image-edit.php:12
+#: ../page/tiny-carousel-image-show.php:16
+msgid "Oops, selected details doesnt exist."
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-edit.php:88
+#: ../page/tiny-carousel-image-edit.php:63
+msgid "Details was successfully updated."
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-edit.php:118
+msgid "Edit Gallery Details"
+msgstr "கேலரி விவரம் திருத்து"
+
+#: ../page/tiny-carousel-gallery-edit.php:126
+msgid ""
+"Enter your image width, You should add same size (width) images in this "
+"gallery. (Ex: 200)"
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-edit.php:130
+msgid ""
+"Enter your image height, You should add same size (height) images in this "
+"gallery. (Ex: 150)"
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-show.php:31
+#: ../page/tiny-carousel-image-show.php:31
+msgid "Selected record was successfully deleted."
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-show.php:58
+#: ../page/tiny-carousel-gallery-show.php:72
+msgid "Short Code"
+msgstr "சுருக்க குறியீட்டை"
+
+#: ../page/tiny-carousel-gallery-show.php:64
+#: ../page/tiny-carousel-gallery-show.php:78
+msgid "Random"
+msgstr "ரேண்டம்"
+
+#: ../page/tiny-carousel-gallery-show.php:94
+#: ../page/tiny-carousel-image-show.php:86
+msgid "Edit"
+msgstr "திருத்து"
+
+#: ../page/tiny-carousel-gallery-show.php:96
+#: ../page/tiny-carousel-image-show.php:88
+msgid "Delete"
+msgstr "நீக்கு"
+
+#: ../page/tiny-carousel-gallery-show.php:114
+#: ../page/tiny-carousel-image-show.php:117
+msgid "No records available."
+msgstr "இல்லை பதிவுகள்"
+
+#: ../page/tiny-carousel-gallery-show.php:124
+#: ../page/tiny-carousel-image-show.php:127
+msgid "Add New"
+msgstr "சேர்க்க"
+
+#: ../page/tiny-carousel-gallery-show.php:129
+#: ../page/tiny-carousel-image-show.php:132
+msgid "Plugin configuration option"
+msgstr "கட்டமைப்பு"
+
+#: ../page/tiny-carousel-gallery-show.php:131
+#: ../page/tiny-carousel-image-show.php:134
+msgid "Add plugin in the posts or pages using short code."
+msgstr ""
+
+#: ../page/tiny-carousel-gallery-show.php:132
+#: ../page/tiny-carousel-image-show.php:135
+msgid "Add directly in to theme using PHP code."
+msgstr ""
+
+#: ../page/tiny-carousel-image-add.php:27
+#: ../page/tiny-carousel-image-add.php:94
+#: ../page/tiny-carousel-image-edit.php:42
+#: ../page/tiny-carousel-image-edit.php:97
+msgid "Enter image title."
+msgstr ""
+
+#: ../page/tiny-carousel-image-add.php:33
+#: ../page/tiny-carousel-image-edit.php:48
+msgid ""
+"Enter tiny-carousel popup url. url must start with either http or https."
+msgstr ""
+
+#: ../page/tiny-carousel-image-add.php:90
+msgid "Add Image Details"
+msgstr ""
+
+#: ../page/tiny-carousel-image-add.php:92
+#: ../page/tiny-carousel-image-edit.php:95
+#: ../page/tiny-carousel-image-show.php:57
+#: ../page/tiny-carousel-image-show.php:67
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: ../page/tiny-carousel-image-add.php:96
+#: ../page/tiny-carousel-image-edit.php:99
+msgid "Image path (URL)"
+msgstr "பட பாதை (URL)"
+
+#: ../page/tiny-carousel-image-add.php:98
+#: ../page/tiny-carousel-image-edit.php:101
+msgid "Enter picture url. url must start with either http or https."
+msgstr ""
+
+#: ../page/tiny-carousel-image-add.php:100
+#: ../page/tiny-carousel-image-edit.php:103
+msgid "Link"
+msgstr "இணைப்பு"
+
+#: ../page/tiny-carousel-image-add.php:102
+#: ../page/tiny-carousel-image-edit.php:105
+msgid "When someone clicks on the picture, where do you want to send them."
+msgstr ""
+
+#: ../page/tiny-carousel-image-add.php:104
+#: ../page/tiny-carousel-image-edit.php:107
+#: ../page/tiny-carousel-image-show.php:59
+#: ../page/tiny-carousel-image-show.php:69
+msgid "Display"
+msgstr "காட்டு"
+
+#: ../page/tiny-carousel-image-add.php:109
+#: ../page/tiny-carousel-image-edit.php:112
+msgid "Do you want the picture to show in your galler?"
+msgstr ""
+
+#: ../page/tiny-carousel-image-add.php:126
+#: ../page/tiny-carousel-image-edit.php:135
+msgid "Select gallery name for this picture."
+msgstr ""
+
+#: ../page/tiny-carousel-image-edit.php:93
+msgid "Edit Image Details"
+msgstr "பட விவரங்கள் திருத்த"
+
+#: ../page/tiny-carousel-image-show.php:58
+#: ../page/tiny-carousel-image-show.php:68
+msgid "Image URL"
+msgstr "பட URL"
+
+#~ msgid "Gallery name"
+#~ msgstr "கேலரி பெயர்"
