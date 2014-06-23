@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-sli
 Tags: tiny, carousel, horizontal, slider
 Requires at least: 3.4
 Tested up to: 3.9.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,8 +67,16 @@ Answer : http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-slider
 
 * First version
 
+= 1.1 =
+
+* Bug in the image link has been fixed.
+
 == Upgrade Notice ==
 
 = 1.0 =
 
 * First version
+
+= 1.1 =
+
+* Bug in the image link has been fixed.

@@ -42,7 +42,7 @@ class tchsp_cls_widget
 				foreach ($image as $img)
 				{					
 					$imageli = $imageli . '<li>';
-						$imageli = $imageli . '<a href="'. $img['img_title'] .'" target="_target">';
+						$imageli = $imageli . '<a href="'. $img['img_link'] .'" target="_target">';
 							$imageli = $imageli . '<img alt="'. $img['img_title'] .'" src="'. $img['img_imageurl'] .'" />';
 						$imageli = $imageli . '</a>';
 					$imageli = $imageli . '</li>';

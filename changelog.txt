@@ -10,3 +10,7 @@ License URI	: http://www.gnu.org/licenses/gpl-2.0.html
 First version.
 
 This is Jquery based image horizontal slider plugin, it is using tiny carousel light weight jquery script to the slideshow.
+
+********************************Version 1.1************************************************************
+
+* Bug in the image link has been fixed.
