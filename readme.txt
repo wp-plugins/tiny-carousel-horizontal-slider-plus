@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-sli
 Tags: tiny, carousel, horizontal, slider
 Requires at least: 3.4
 Tested up to: 3.9.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,11 @@ Answer : http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-slider
 
 * Bug in the image link has been fixed.
 
+= 1.2 =
+
+1. Issue on random image display has been fixed.
+2. Link target option has been added on admin image management page. With this option you can specifies where to open the link.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -80,3 +85,8 @@ Answer : http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-slider
 = 1.1 =
 
 * Bug in the image link has been fixed.
+
+= 1.2 =
+
+1. Issue on random image display has been fixed.
+2. Link target option has been added on admin image management page. With this option you can specifies where to open the link.

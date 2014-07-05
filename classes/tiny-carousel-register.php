@@ -4,10 +4,20 @@ class tchsp_cls_registerhook
 {
 	public static function tchsp_activation()
 	{
-		global $wpdb, $tchsp_db_version;
+		global $wpdb;
 		$prefix = $wpdb->prefix;
 		
-		add_option('tchsp_popup_db', "1.0");
+		$tchsp_plugin_ver = "1.2";
+		$tchsp_plugin_installed = "";
+		$tchsp_plugin_installed = get_option("tchsp_plugin_installed");
+		if($tchsp_plugin_installed == "")
+		{
+			add_option('tchsp_plugin_installed', "1.2");
+		}
+		else
+		{
+			update_option( "tchsp_plugin_installed", $tchsp_plugin_ver );
+		}
 		
 		// Plugin tables
 		$array_tables_to_plugin = array('tinycarousel_gallery' ,'tinycarousel_image');

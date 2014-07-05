@@ -36,14 +36,22 @@ class tchsp_cls_dbquery
 		return $arrRes;
 	}
 	
-	public static function tchsp_image_details_load($id = 0)
+	public static function tchsp_image_details_load($id = 0, $random = "NO")
 	{
 		global $wpdb;
 		$prefix = $wpdb->prefix;
 		$arrRes = array();
+		$sSql = "SELECT * FROM `".$prefix."tinycarousel_image`";
 		if($id > 0)
 		{
-			$sSql = $wpdb->prepare("SELECT * FROM `".$prefix."tinycarousel_image` where img_gal_id = %d and img_display = 'YES'", array($id));
+			if($random == "YES")
+			{
+				$sSql = $wpdb->prepare("SELECT * FROM `".$prefix."tinycarousel_image` where img_gal_id = %d and img_display = 'YES' ORDER BY rand()", array($id));
+			}
+			else
+			{
+				$sSql = $wpdb->prepare("SELECT * FROM `".$prefix."tinycarousel_image` where img_gal_id = %d and img_display = 'YES'", array($id));
+			}
 		}
 		$arrRes = $wpdb->get_results($sSql, ARRAY_A);
 		return $arrRes;
@@ -65,16 +73,16 @@ class tchsp_cls_dbquery
 		if($action == "ins")
 		{
 			$sql = $wpdb->prepare("INSERT INTO `".$prefix."tinycarousel_image` 
-			(`img_title`, `img_imageurl`, `img_link`, `img_display`, `img_gal_id`)
-			VALUES(%s, %s, %s, %s, %s)", 
-			array($data["img_title"], $data["img_imageurl"], $data["img_link"], $data["img_display"], $data["img_gal_id"]) );
+			(`img_title`, `img_imageurl`, `img_link`, `img_linktarget`, `img_display`, `img_gal_id`)
+			VALUES(%s, %s, %s, %s, %s, %s)", 
+			array($data["img_title"], $data["img_imageurl"], $data["img_link"], $data["img_linktarget"], $data["img_display"], $data["img_gal_id"]) );
 			$wpdb->query($sql);
 			return "sus";
 		}
 		elseif($action == "ups")
 		{
-			$sql = $wpdb->prepare("UPDATE `".$prefix."tinycarousel_image` SET `img_title` = %s, `img_imageurl` = %s, `img_link` = %s, `img_display` = %s,
-			 `img_gal_id` = %d WHERE img_id = %d LIMIT 1", array($data["img_title"], $data["img_imageurl"], $data["img_link"], $data["img_display"], 
+			$sql = $wpdb->prepare("UPDATE `".$prefix."tinycarousel_image` SET `img_title` = %s, `img_imageurl` = %s, `img_link` = %s, `img_linktarget` = %s, `img_display` = %s,
+			 `img_gal_id` = %d WHERE img_id = %d LIMIT 1", array($data["img_title"], $data["img_imageurl"], $data["img_link"], $data["img_linktarget"], $data["img_display"], 
 			 $data["img_gal_id"], $data["img_id"]) );
 			$wpdb->query($sql);
 			return "sus";
@@ -101,7 +109,10 @@ class tchsp_cls_dbquery
 		$result = tchsp_cls_dbquery::tchsp_image_details_count(0);
 		if ($result == 0)
 		{
-			$img_title = "Tiny carousel sample 1";
+			$img_title1 = "Tiny Carousel Horizontal Slider Plus Image 1";
+			$img_title2 = "Tiny Carousel Horizontal Slider Plus Image 2";
+			$img_title3 = "Tiny Carousel Horizontal Slider Plus Image 3";
+			$img_title4 = "Tiny Carousel Horizontal Slider Plus Image 4";
 			$img_imageurl1 = TCHSP_URL . "images/Sing_1.jpg";
 			$img_imageurl2 = TCHSP_URL . "images/Sing_2.jpg";
 			$img_imageurl3 = TCHSP_URL . "images/Sing_3.jpg";
@@ -109,16 +120,16 @@ class tchsp_cls_dbquery
 			//$img_imageurl5 = TCHSP_URL . "images/Sing_5.jpg";
 			//$img_imageurl6 = TCHSP_URL . "images/Sing_6.jpg";
 			$sql = $wpdb->prepare("INSERT INTO `".$prefix."tinycarousel_image` (`img_title`, `img_imageurl`,`img_gal_id`) 
-			VALUES (%s, %s, %d)", array($img_title, $img_imageurl1, "1"));
+			VALUES (%s, %s, %d)", array($img_title1, $img_imageurl1, "1"));
 			$wpdb->query($sql);
 			$sql = $wpdb->prepare("INSERT INTO `".$prefix."tinycarousel_image` (`img_title`, `img_imageurl`,`img_gal_id`) 
-			VALUES (%s, %s, %d)", array($img_title, $img_imageurl2, "1"));
+			VALUES (%s, %s, %d)", array($img_title2, $img_imageurl2, "1"));
 			$wpdb->query($sql);
 			$sql = $wpdb->prepare("INSERT INTO `".$prefix."tinycarousel_image` (`img_title`, `img_imageurl`,`img_gal_id`) 
-			VALUES (%s, %s, %d)", array($img_title, $img_imageurl3, "1"));
+			VALUES (%s, %s, %d)", array($img_title3, $img_imageurl3, "1"));
 			$wpdb->query($sql);
 			$sql = $wpdb->prepare("INSERT INTO `".$prefix."tinycarousel_image` (`img_title`, `img_imageurl`,`img_gal_id`) 
-			VALUES (%s, %s, %d)", array($img_title, $img_imageurl4, "1"));
+			VALUES (%s, %s, %d)", array($img_title4, $img_imageurl4, "1"));
 			$wpdb->query($sql);
 			//$sql = $wpdb->prepare("INSERT INTO `".$prefix."tinycarousel_image` (`img_title`, `img_imageurl`,`img_gal_id`) 
 			//VALUES (%s, %s, %d)", array($img_title, $img_imageurl5, "1"));

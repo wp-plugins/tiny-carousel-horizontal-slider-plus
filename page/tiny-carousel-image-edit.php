@@ -26,6 +26,7 @@ else
 		'img_title' => $data[0]['img_title'],
 		'img_imageurl' => $data[0]['img_imageurl'],
 		'img_link' => $data[0]['img_link'],
+		'img_linktarget' => $data[0]['img_linktarget'],
 		'img_display' => $data[0]['img_display'],
 		'img_gal_id' => $data[0]['img_gal_id'],
 	);
@@ -50,6 +51,7 @@ if (isset($_POST['tchsp_form_submit']) && $_POST['tchsp_form_submit'] == 'yes')
 	}
 
 	$form['img_link'] = isset($_POST['img_link']) ? $_POST['img_link'] : '';
+	$form['img_linktarget'] = isset($_POST['img_linktarget']) ? $_POST['img_linktarget'] : '';
 	$form['img_display'] = isset($_POST['img_display']) ? $_POST['img_display'] : '';
 	$form['img_gal_id'] = isset($_POST['img_gal_id']) ? $_POST['img_gal_id'] : '';
 	$form['img_id'] = isset($_POST['img_id']) ? $_POST['img_id'] : '';
@@ -102,7 +104,14 @@ if ($tchsp_error_found == FALSE && strlen($tchsp_success) > 0)
 		
 		<label for="tag-a"><?php _e('Link', TCHSP_TDOMAIN); ?></label>
 		<input name="img_link" type="text" id="img_link" value="<?php echo $form['img_link']; ?>" size="60" maxlength="1024" />
-		<p><?php _e('When someone clicks on the picture, where do you want to send them.', TCHSP_TDOMAIN); ?></p>
+		<p><?php _e('When someone clicks on the picture, where do you want to send them. Link must start with either http or https.', TCHSP_TDOMAIN); ?></p>
+		
+		<label for="tag-a"><?php _e('Link target', TCHSP_TDOMAIN); ?></label>
+		<select name="img_linktarget" id="img_linktarget">
+			<option value='_blank' <?php if($form['img_linktarget'] == '_blank') { echo "selected='selected'" ; } ?>>Open New Window</option>
+			<option value='_self' <?php if($form['img_linktarget'] == '_self') { echo "selected='selected'" ; } ?>>Open Same Window</option>
+		</select>
+		<p><?php _e('Target attribute specifies where to open the link.', TCHSP_TDOMAIN); ?></p>
 		
 		<label for="tag-a"><?php _e('Display', TCHSP_TDOMAIN); ?></label>
 		<select name="img_display" id="img_display">

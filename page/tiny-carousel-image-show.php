@@ -54,20 +54,24 @@ if (isset($_POST['frm_tchsp_display']) && $_POST['frm_tchsp_display'] == 'yes')
           <tr>
 			<th class="check-column" scope="col">
 			<input type="checkbox" name="tchsp_checkall" id="tchsp_checkall" onClick="_tchsp_checkall('frm_tchsp_display', 'chk_delete[]', this.checked);" /></th>
-            <th scope="col"><?php _e('Title', TCHSP_TDOMAIN); ?></th>
+            <th scope="col"><?php _e('Image Title', TCHSP_TDOMAIN); ?></th>
 			<th scope="col"><?php _e('Image URL', TCHSP_TDOMAIN); ?></th>
+			<th scope="col"><?php _e('Link', TCHSP_TDOMAIN); ?></th>
+			<th scope="col"><?php _e('Link Target', TCHSP_TDOMAIN); ?></th>
 			<th scope="col"><?php _e('Display', TCHSP_TDOMAIN); ?></th>
-			<th scope="col"><?php _e('Gallery title', TCHSP_TDOMAIN); ?></th>
+			<th scope="col"><?php _e('Gallery Title', TCHSP_TDOMAIN); ?></th>
           </tr>
         </thead>
 		<tfoot>
           <tr>
 			<th class="check-column" scope="col">
 			<input type="checkbox" name="tchsp_checkall" id="tchsp_checkall" onClick="_tchsp_checkall('frm_tchsp_display', 'chk_delete[]', this.checked);" /></th>
-            <th scope="col"><?php _e('Title', TCHSP_TDOMAIN); ?></th>
+            <th scope="col"><?php _e('Image Title', TCHSP_TDOMAIN); ?></th>
 			<th scope="col"><?php _e('Image URL', TCHSP_TDOMAIN); ?></th>
+			<th scope="col"><?php _e('Link', TCHSP_TDOMAIN); ?></th>
+			<th scope="col"><?php _e('Link Target', TCHSP_TDOMAIN); ?></th>
 			<th scope="col"><?php _e('Display', TCHSP_TDOMAIN); ?></th>
-			<th scope="col"><?php _e('Gallery title', TCHSP_TDOMAIN); ?></th>
+			<th scope="col"><?php _e('Gallery Title', TCHSP_TDOMAIN); ?></th>
           </tr>
         </tfoot>
 		<tbody>
@@ -89,9 +93,19 @@ if (isset($_POST['frm_tchsp_display']) && $_POST['frm_tchsp_display'] == 'yes')
 						</span> 
 						</div>
 						</td>
+						<td><a href="<?php echo $data['img_imageurl']; ?>" target="_blank"><img src="<?php echo TCHSP_URL; ?>inc/image-icon.png" /></a></td>
+						<td><a href="<?php echo $data['img_link']; ?>" target="_blank"><img src="<?php echo TCHSP_URL; ?>inc/linkicon.gif" /></a></td>
 						<td>
-							<a href="<?php echo $data['img_link']; ?>" target="_blank"><img src="<?php echo TCHSP_URL; ?>inc/linkicon.gif" /></a>
-							<a href="<?php echo $data['img_imageurl']; ?>" target="_blank"><?php echo $data['img_imageurl']; ?></a>
+						<?php  
+						if($data['img_linktarget'] == "_blank")
+						{
+							echo "Open New Window";
+						}
+						else
+						{
+							echo "Open Same Window";
+						}						
+						?>
 						</td>
 						<td><?php echo $data['img_display']; ?></td>
 						<td>
@@ -114,7 +128,7 @@ if (isset($_POST['frm_tchsp_display']) && $_POST['frm_tchsp_display'] == 'yes')
 			}
 			else
 			{
-				?><tr><td colspan="5" align="center"><?php _e('No records available.', TCHSP_TDOMAIN); ?></td></tr><?php 
+				?><tr><td colspan="7" align="center"><?php _e('No records available.', TCHSP_TDOMAIN); ?></td></tr><?php 
 			}
 			?>
 		</tbody>

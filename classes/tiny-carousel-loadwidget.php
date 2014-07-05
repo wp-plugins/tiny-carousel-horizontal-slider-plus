@@ -36,7 +36,7 @@ class tchsp_cls_widget
 			$gal_width1 = $gal_width + 4;
 			$gal_height1 = $gal_height + 4;
 			
-			$image = tchsp_cls_dbquery::tchsp_image_details_load($form_gallery["gal_id"]);
+			$image = tchsp_cls_dbquery::tchsp_image_details_load($form_gallery["gal_id"], $form_gallery["gal_random"]);
 			if( count($image) > 0 )
 			{
 				foreach ($image as $img)

@@ -13,4 +13,9 @@ This is Jquery based image horizontal slider plugin, it is using tiny carousel l
 
 ********************************Version 1.1************************************************************
 
-* Bug in the image link has been fixed.
+1. Bug in the image link has been fixed.
+
+********************************Version 1.2************************************************************
+
+1. Issue on random image display has been fixed.
+2. Link target option has been added on admin image management page. With this option you can specifies where to open the link.
