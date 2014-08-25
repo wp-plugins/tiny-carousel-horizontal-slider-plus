@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-sli
 Plugin URI: http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-slider-plus-wordpress-plugin/
 Tags: tiny, carousel, horizontal, slider
 Requires at least: 3.4
-Tested up to: 3.9.1
-Stable tag: 1.2
+Tested up to: 4.0
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,7 @@ This is Jquery based image horizontal slider plugin, it is using Tiny Carousel l
 
 == Installation ==
 
-Installation Instruction and Configuration [Installation Instruction and Configuration] (http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-slider-plus-wordpress-plugin/)
+[Installation Instruction and Configuration](http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-slider-plus-wordpress-plugin/)
 
 == Frequently Asked Questions ==
 
@@ -76,6 +76,10 @@ Answer : http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-slider
 1. Issue on random image display has been fixed.
 2. Link target option has been added on admin image management page. With this option you can specifies where to open the link.
 
+= 1.3 =
+
+* Tested up to 4.0
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -90,3 +94,7 @@ Answer : http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-slider
 
 1. Issue on random image display has been fixed.
 2. Link target option has been added on admin image management page. With this option you can specifies where to open the link.
+
+= 1.3 =
+
+* Tested up to 4.0
