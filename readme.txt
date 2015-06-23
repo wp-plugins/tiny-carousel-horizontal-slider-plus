@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-sli
 Tags: tiny, carousel, horizontal, slider
 Requires at least: 3.4
 Tested up to: 4.2.2
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -88,6 +88,10 @@ Answer : http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-slider
 
 1. Tested up to 4.2.2
 
+= 1.6 =
+
+Image upload option is added in the plugin admin. With this option you can easily upload (or select from media) your images into this plugin.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -114,3 +118,7 @@ Answer : http://www.gopiplus.com/work/2014/06/06/tiny-carousel-horizontal-slider
 = 1.5 =
 
 1. Tested up to 4.2.2
+
+= 1.6 =
+
+Image upload option is added in the plugin admin. With this option you can easily upload (or select from media) your images into this plugin.

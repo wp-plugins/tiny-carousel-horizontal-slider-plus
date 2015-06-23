@@ -88,6 +88,32 @@ if ($tchsp_error_found == FALSE && strlen($tchsp_success) > 0)
 }
 ?>
 <script language="JavaScript" src="<?php echo TCHSP_URL; ?>page/setting.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+    $('#upload-btn').click(function(e) {
+        e.preventDefault();
+        var image = wp.media({ 
+            title: 'Upload Image',
+            // mutiple: true if you want to upload multiple files at once
+            multiple: false
+        }).open()
+        .on('select', function(e){
+            // This will return the selected image from the Media Uploader, the result is an object
+            var uploaded_image = image.state().get('selection').first();
+            // We convert uploaded_image to a JSON object to make accessing it easier
+            // Output to the console uploaded_image
+            console.log(uploaded_image);
+            var img_imageurl = uploaded_image.toJSON().url;
+            // Let's assign the url value to the input field
+            $('#img_imageurl').val(img_imageurl);
+        });
+    });
+});
+</script>
+<?php
+wp_enqueue_script('jquery'); // jQuery
+wp_enqueue_media(); // This will enqueue the Media Uploader script
+?>
 <div class="form-wrap">
 	<div id="icon-edit" class="icon32 icon32-posts-post"><br></div>
 	<h2><?php _e(TCHSP_PLUGIN_DISPLAY, TCHSP_TDOMAIN); ?></h2>
@@ -100,7 +126,8 @@ if ($tchsp_error_found == FALSE && strlen($tchsp_success) > 0)
 		
 		<label for="tag-a"><?php _e('Image path (URL)', TCHSP_TDOMAIN); ?></label>
 		<input name="img_imageurl" type="text" id="img_imageurl" value="<?php echo $form['img_imageurl']; ?>" size="60" maxlength="1024" />
-		<p><?php _e('Enter picture url. url must start with either http or https.', TCHSP_TDOMAIN); ?></p>			
+		<input type="button" name="upload-btn" id="upload-btn" class="button-secondary" value="Upload Image">
+		<p><?php _e('Where is the picture located on the internet (ex: http://www.gopiplus.com/work/wp-content/uploads/pluginimages/88x88/1.jpg)', TCHSP_TDOMAIN); ?></p>			
 		
 		<label for="tag-a"><?php _e('Link', TCHSP_TDOMAIN); ?></label>
 		<input name="img_link" type="text" id="img_link" value="<?php echo $form['img_link']; ?>" size="60" maxlength="1024" />

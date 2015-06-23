@@ -23,3 +23,15 @@ This is Jquery based image horizontal slider plugin, it is using tiny carousel l
 ********************************Version 1.3************************************************************
 
 Tested up to 4.0
+
+********************************Version 1.4************************************************************
+
+* Tested up to 4.1
+
+********************************Version 1.5************************************************************=
+
+1. Tested up to 4.2.2
+
+********************************Version 1.6************************************************************
+
+Image upload option is added in the plugin admin. With this option you can easily upload (or select from media) your images into this plugin.
